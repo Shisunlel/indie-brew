@@ -14,80 +14,98 @@
     <title>Indie Brew | Shisun</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="sm:px-12">
+      <nav class="lg:px-[7.5rem]">
         <ul class="flex items-center justify-between">
           <li>
             <a href="/indie-brew/">
               <img src="./assets/svg/Logo.svg" alt="" />
             </a>
           </li>
-          <li>
+          <li class="sm:hidden">
             <img src="./assets/svg/Hamburger Menu.svg" alt="" />
           </li>
+          <ul class="hidden sm:flex gap-8 items-center">
+            <li>Pricing</li>
+            <li>Support</li>
+            <li class="cta-button">Get Started <span> - it's free</span></li>
+          </ul>
         </ul>
       </nav>
-      <div class="flex justify-center px-4 pt-20 pb-10">
-        <img src="./assets/img/Feed Mockup.png" alt="" />
-      </div>
-      <div>
-        <div class="section-padding mb-5">
-          <h1 class="text-[3.5rem] leading-none font-bold">
-            Your weekly personal feed digest.
-          </h1>
-          <p class="description">
-            With IndieBrew, get personal feeds from resources all around the
-            web, including Reddit, HackerNews, IndieHackers, and much more.
-          </p>
-          <a
-            class="inline-block hover:cursor-pointer rounded py-4 px-6 text-white bg-primary"
-          >
-            Get Started <span>- it's free</span>
-          </a>
+      <section
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-center"
+      >
+        <div
+          class="flex justify-center self-center px-4 sm:w-1/2 lg:w-2/5 pt-20 sm:pt-12 pb-10 order-0 lg:order-1"
+        >
+          <img src="./assets/img/Feed Mockup.png" alt="" />
         </div>
-        <div class="section-padding">
-          <div>
-            <img src="./assets/svg/User Avatars.svg" alt="" />
+        <div>
+          <div class="section-padding mb-5">
+            <h1 class="text-[3.5rem] leading-none font-bold max-width-tablet">
+              Your weekly personal feed digest.
+            </h1>
+            <p class="description max-width-tablet">
+              With IndieBrew, get personal feeds from resources all around the
+              web, including Reddit, HackerNews, IndieHackers, and much more.
+            </p>
+            <a class="cta-button"> Get Started <span>- it's free</span> </a>
           </div>
-          <p>
-            Join <span class="text-primary font-bold">32,642</span> IndieBrewers
-            in curating their personal digest.
-          </p>
+          <div class="section-padding">
+            <div>
+              <img src="./assets/svg/User Avatars.svg" alt="" />
+            </div>
+            <p>
+              Join
+              <span class="text-primary font-bold">32,642</span> IndieBrewers in
+              curating their personal digest.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
-    <main>
+    <main class="sm:mt-20 lg:px-28">
       <div>
-        <section class="section-padding">
-          <div>
+        <section
+          class="section-padding flex flex-col sm:flex-row gap-4 items-center justify-center"
+        >
+          <div class="sm:order-2 sm:w-[30%]">
             <img src="./assets/img/Social Media Icons.png" alt="" />
           </div>
-          <h2 class="subtitle">Curate your feed from dozens of resources.</h2>
-          <p class="description">
-            We cover all major platforms where one could want to curate their
-            feed from. Reddit, ProductHunt, IndieHackers, and so much more.
-          </p>
-          <a href="/indie-brew/" class="link">See full list of resources ➡</a>
+          <div class="flex flex-col gap-2 sm:order-1 sm:w-[60%]">
+            <h2 class="subtitle">Curate your feed from dozens of resources.</h2>
+            <p class="description">
+              We cover all major platforms where one could want to curate their
+              feed from. Reddit, ProductHunt, IndieHackers, and so much more.
+            </p>
+            <a href="/indie-brew/" class="link">See full list of resources ➡</a>
+          </div>
         </section>
-        <section class="section-padding">
-          <div class="p-12">
+        <section
+          class="section-padding flex flex-col sm:flex-row gap-4 items-center justify-center"
+        >
+          <div class="py-12 w-3/4 sm:w-[30%] flex justify-center">
             <img src="./assets/img/Phone Mockup.png" alt="" />
           </div>
-          <h2 class="subtitle">
-            Access your feed from the comfort of your phone.
-          </h2>
-          <p class="description">
-            With native apps for both iOS and Android, accessing your curated
-            content has never been easier.
-          </p>
-          <a href="/indie-brew/" class="link">Sign up for the waitlist ➡</a>
+          <div class="flex flex-col gap-2">
+            <h2 class="subtitle">
+              Access your feed from the comfort of your phone.
+            </h2>
+            <p class="description">
+              With native apps for both iOS and Android, accessing your curated
+              content has never been easier.
+            </p>
+            <a href="/indie-brew/" class="link">Sign up for the waitlist ➡</a>
+          </div>
         </section>
       </div>
     </main>
-    <footer>
+    <footer
+      class="flex flex-col sm:flex-row justify-between sm:px-12 lg:px-[10.5rem]"
+    >
       <section>
         <strong>IndieBrew</strong>
-        <p class="darker-description mt-2">
+        <p class="darker-description mt-2 sm:max-w-xs">
           With IndieBrew, get personal feeds from resources all around the web,
           including Reddit, HackerNews, and much more.
         </p>
